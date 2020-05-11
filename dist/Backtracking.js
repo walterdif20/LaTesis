@@ -71,9 +71,7 @@ function contiene(camino, vecino){
     var suma = 0;
       camino.forEach((i1, i) => {
         camino.forEach((i2, i) => {
-            if (i1 != i2){
             suma += viajes[i1][i2];
-          }
         });
       });
       return suma;
